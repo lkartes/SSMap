@@ -1,11 +1,14 @@
 <template>
-  <div>Hello World!</div>
+  <ssmap></ssmap>
 </template>
 
 <script>
+import ssmap from "./components/Map.vue";
 export default {
   name: "App",
-  components: {},
+  components: {
+    ssmap
+  },
   computed: {},
   methods: {}
 };
@@ -13,4 +16,5 @@ export default {
 
 <style lang="scss">
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/leaflet/dist/leaflet.css";
 </style>
